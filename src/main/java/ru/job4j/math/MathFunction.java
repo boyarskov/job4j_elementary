@@ -9,8 +9,6 @@ public class MathFunction {
                 return first * second;
     }
 
-    //В класс MathFunction добавьте еще 2 метода, которые будут рассчитывать разность и деление двух чисел соответственно.
-
     public static double difference(double first, double second) {
         return first - second;
     }
