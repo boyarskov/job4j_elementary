@@ -6,8 +6,7 @@ public class DummyBot2 {
         System.out.println("Вы ввели: " + message);
         if (message.equals("Привет, Бот.")) {
             System.out.println("Привет, умник.");
-        }
-        if (message.equals("Пока.")) {
+        } else if (message.equals("Пока.")) {
             System.out.println("До скорой встречи.");
         } else {
             System.out.println("Это ставит меня в тупик. Задайте другой вопрос.");
