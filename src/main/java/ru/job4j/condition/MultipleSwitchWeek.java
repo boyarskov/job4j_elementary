@@ -13,4 +13,9 @@ public class MultipleSwitchWeek {
             default -> -1;
         };
     }
+
+    public static void main(String[] args) {
+        int rsl = MultipleSwitchWeek.numberOfDay("Tuesday");
+        System.out.println(rsl);
+    }
 }
