@@ -5,8 +5,8 @@ import org.junit.Test;
 
 public class FindLoopTest {
     @Test
-    public void whenArrayHas5Then0() {
-        int[] data = {5, 4, 3, 2};
+    public void whenArrayHasLength5Then0() {
+        int[] data = new int[] {5, 10, 3};
         int el = 5;
         int result = FindLoop.indexOf(data, el);
         int expected = 0;
@@ -14,30 +14,37 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHas9Then3() {
-        int[] data = {3, 6, 1, 9, 10};
-        int el = 9;
-        int result = FindLoop.indexOf(data, el);
+    public void whenFind3() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenArrayHas21Then8() {
-        int[] data = {4, 2, 9, 20, 23, 54, 19, 5, 21, 43};
-        int el = 21;
-        int result = FindLoop.indexOf(data, el);
-        int expected = 8;
+    public void whenFind6() {
+        int[] data = new int[] {2, 3, 4, 3, 9, 6, 7};
+        int el = 6;
+        int start = 2;
+        int finish = 6;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = 5;
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenArrayHas5ThenMinus1() {
-        int[] data = {4, 2, 9};
-        int el = 5;
-        int result = FindLoop.indexOf(data, el);
+    public void whenFind9() {
+        int[] data = new int[] {2, 3, 4, 3, 9};
+        int el = 9;
+        int start = 1;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
+
 }
 
