@@ -36,7 +36,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasNo9thenMinus1() {
+    public void whenArrayHasNo8thenMinus1() {
         int[] data = new int[] {2, 3, 4, 3, 9};
         int el = 8;
         int start = 1;
