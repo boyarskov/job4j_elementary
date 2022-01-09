@@ -7,7 +7,6 @@ public class EditorElementsArray {
                 if (array[i][j] <= el) {
                     array[i][j] = 0;
                 }
-
                 if (array[i][j] > el) {
                     array[i][j] = array[i][j] - el;
                 }
